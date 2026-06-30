@@ -1,0 +1,19 @@
+# Testing Workflow
+
+name: Example
+
+on:
+  push:
+    branches: [ testing ]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Print
+        run: echo "Hello World"
+
+        
